@@ -1,0 +1,10 @@
+node_modules/
+.sites-local/
+*.tar.gz
+qa/
+dist/
+.openai/
+.env
+.env.*
+*.log
+*.zip

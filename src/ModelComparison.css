@@ -1,0 +1,19 @@
+.model-comparison{padding-top:20px}
+.model-case-cover{position:relative;isolation:isolate;aspect-ratio:16/9;overflow:hidden;padding:36px;color:#fff;background:#000}
+.model-case-cover>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 26%;z-index:-2}
+.model-case-cover::after{content:'';position:absolute;inset:0;background:linear-gradient(90deg,#000a,transparent 90%),linear-gradient(0deg,#0006,transparent 50%);z-index:-1}
+.model-cover-top{display:flex;justify-content:space-between;font-size:9px;letter-spacing:.14em}
+.model-cover-title{position:absolute;left:6%;top:45%;max-width:75%}
+.model-cover-title>span{color:var(--accent);font-size:11px;letter-spacing:.12em}
+.model-cover-title h3{border-left:2px solid var(--accent);padding-left:14px;margin:12px 0;font-size:clamp(24px,4vw,62px);line-height:1.15}
+.model-cover-title p{padding-left:16px;font-size:9px;letter-spacing:.15em;color:#c2c2c2}
+.model-cover-mark{position:absolute;right:7%;top:25%;border:1px solid var(--accent);color:var(--accent);font-size:46px;width:80px;line-height:80px;text-align:center}
+.model-comparison-section{margin-top:54px}
+.model-comparison-section>header{margin-bottom:22px}
+.model-comparison-section>header>span{color:#aaa;font-size:10px;letter-spacing:.13em}
+.model-comparison-section h3{font-size:clamp(23px,3vw,42px);color:var(--accent);margin-top:10px}
+.model-comparison-pair{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));align-items:start;gap:24px;margin-bottom:26px}
+.model-comparison-pair figure{margin:0;min-width:0}
+.model-comparison-pair img{display:block;width:100%;height:auto}
+.model-comparison-pair figcaption{font-size:10px;color:#999;padding-top:9px}
+@media(max-width:700px){.model-case-cover{padding:15px}.model-cover-top{font-size:6px}.model-cover-title>span{font-size:7px}.model-cover-title h3{font-size:24px;margin:7px 0;padding-left:9px}.model-cover-title p{font-size:6px;padding-left:11px}.model-cover-mark{width:40px;line-height:40px;font-size:25px;right:6%;top:20%}.model-comparison-section{margin-top:34px}.model-comparison-section>header{margin-bottom:16px}.model-comparison-section>header>span{font-size:7px}.model-comparison-pair{gap:10px;margin-bottom:20px}.model-comparison-pair figcaption{font-size:9px}}
